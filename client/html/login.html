@@ -8,6 +8,9 @@
     <link rel="stylesheet" href="../css/base.css">
     <link rel="stylesheet" href="../css/login.css">
     <link rel="stylesheet" href="../iconfont/iconfont.css">
+    <script src="../js/jquery-3.4.1.js"></script>
+    <script src="../js/md5.js"></script>
+    <script src="../js/login.js"></script>
 
 </head>
 
@@ -58,9 +61,11 @@
                             <div class="nop-form-item-input">
                                 <div class="suggest-wrapper">
                                     <div class="bview-input-wrapper" style="width: 100%;">
-                                        <div class="bview-input-icon"></div>
-                                        <input type="text" placeholder="请输入邮箱地址" class="bview-input">
-                                        <span class="ieplaceholder" style="display: none;">dafda</span>
+                                        <div class="bview-input-icon">
+                                            <i class="iconfont icon-shanchu1"></i>
+                                        </div>
+                                        <input type="text" placeholder="请输入邮箱地址" class="bview-input" id="nameemail">
+                                        <!-- <span class="ieplaceholder" style="display: none;">请检测您的邮箱格式</span> -->
                                     </div>
                                 </div>
                                 <div class="nop-form-item-tip"></div>
@@ -72,9 +77,10 @@
                                 <div class="pwd-wrapper">
                                     <div class="bview-input-wrapper" style="width: 100%;">
                                         <div class="bview-input-icon">
-                                            <i></i>
+                                            <i class="iconfont icon-shanchu1"></i>
                                         </div>
-                                        <input type="password" placeholder="请输入8-16位密码" class="bview-input">
+                                        <input type="password" placeholder="请输入8-16位密码" class="bview-input"
+                                            id="password">
                                         <span class="ieplaceholder" style="display: none;">请输入8-16位密码</span>
                                     </div>
                                 </div>
@@ -83,21 +89,55 @@
                         </div>
                     </div>
                     <div class="agree">
+                        <input id="infont" type="checkbox" checked="checked">
                         <div class="u-agree-area">
-                            <input type="radio">
+
+
                             用户勾选即代表同意
                             <a href="">《网易邮箱服务条款》</a>和<a href="">《网易隐私政策》</a>
                         </div>
                     </div>
-                    <button>下一步</button>
+                    <button class="step0-btn">下一步</button>
                     <div class="m-gologin">
                         已有账号？
-                        <a href=""></a>
+                        <a href="" class="u-href">去登录</a>
+                    </div>
+                </div>
+
+            </div>
+
+
+        </div>
+        <div class="g-ft clearfix">
+            <div class="bview-footer">
+                <div class="m-c">
+                    <div class="u-link">
+                        <a href="http://gb.corp.163.com/gb/about/overview.html" target="_blank">公司简介</a>
+                        &nbsp;|&nbsp;
+                        <a href="https://id.163.com" target="_blank">网易帐号中心</a>
+                        &nbsp;|&nbsp;
+                        <a href="https://reg.163.com/yixin/caipiaoact.do#from=ursdlq" target="_blank">帐号中心公众号</a>
+                        &nbsp;|&nbsp;
+                        <a href="https://id.163.com/gj/?from=new_aq" target="_blank">网易帐号管家</a>
+                        &nbsp;|&nbsp;
+                        <a href="https://haoma.163.com/" target="_blank">网易靓号</a>
+                        &nbsp;|&nbsp;
+                        <a href="https://hc.reg.163.com/webcomponentH5/index.html?from=urs_h5"
+                            target="_blank">网易帮助中心</a>
+                    </div>
+                    <div class="u-icp u-link">
+                        <a target="_blank"
+                            href="http://cms-bucket.ws.126.net/2019/05/30/f0b8f62f908a411e944aa93f0727272d.jpeg">增值电信业务经营许可证粤B2-20090191</a>
+                        <a target="_blank" href="http://www.beian.miit.gov.cn/">工业和信息化部ICP/IP地址/域名信息备案管理系统</a>
+
+                    </div>
+                    <div class="u-cpr">
+                        网易公司版权所有&nbsp; © 1997-2020
                     </div>
                 </div>
             </div>
-
         </div>
+    </div>
 </body>
 
 </html>
