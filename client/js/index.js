@@ -6,12 +6,12 @@ $(() => {
     $.getJSON("../server/product.json", (data) => {
         let html = data.map(item => {
             return `<li>
-                <a href="" data-index = "${item.data_index}">
+                <div data-index = "${item.data_index}">
                     <img src="${item.img}" alt="">
                     <h3 class="tit">${item.name}</h3>
                     <p class="desc">${item.title}</p>
                     <p class="price">${item.price}</p>
-                </a>
+                </div>
             </li>`
         }).join("")
         uls.innerHTML = html
@@ -43,5 +43,10 @@ $(() => {
 
     // console.log($(".topbar-list > li").children(".nav-dropdown").parent().siblings().children()
     // )
+    $("m-selectInfo > li").on(function (event) {
+        var target = $(event.target);
+        // $(".select-container").css("display", "none").siblings(".aget").css("display", "block")
+        console.log($(".select-container"))
+    })
 
 })

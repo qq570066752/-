@@ -11,6 +11,7 @@
     <script src="../js/jquery-3.4.1.js"></script>
     <script src="../js/md5.js"></script>
     <script src="../js/login.js"></script>
+    <script src="../js/captcha.js"></script>
 
 </head>
 
@@ -55,7 +56,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="box">
+                <!-- 注册第一步 -->
+                <div class="box" id="step0-btn">
                     <div>
                         <div class="nop-form-item">
                             <div class="nop-form-item-input">
@@ -89,7 +91,7 @@
                         </div>
                     </div>
                     <div class="agree">
-                        <input id="infont" type="checkbox" checked="checked">
+                        <input id="infont" type="checkbox">
                         <div class="u-agree-area">
 
 
@@ -102,8 +104,76 @@
                         已有账号？
                         <a href="" class="u-href">去登录</a>
                     </div>
+
+                </div>
+                <!-- 注册第二步 -->
+                <div class="box1">
+                    <div class="m-realname">
+                        <div class="u-title">设置实名信息</div>
+                        <div class="m-box">
+                            <p class="u-note">
+                                为确保帐号安全，请先设置实名信息再进行后续操作
+                            </p>
+                            <div>
+                                <div class="form-item">
+                                    <div class="bview-input">
+                                        <input type="text" placeholder="真实姓名" class="intp-box name-input"
+                                            id="real-inpu">
+                                    </div>
+                                    <div class="item-tip"></div>
+                                </div>
+
+                                <div class="form-item">
+                                    <div class="bview-input">
+                                        <input type="text" placeholder="身份证号码" class="intp-box  inner-input"
+                                            id="status-input">
+                                        <div class="item-tip"></div>
+                                    </div>
+                                    <div class="item-tip"></div>
+                                </div>
+
+                                <button class="m-btn">下一步</button>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 注册第三步 -->
+                <div class="box2">
+                    <div class="m-realphone">
+                        <div class="u-title">手机验证</div>
+                        <div class="u-box">
+                            <p class="note">
+                                为了确保帐号安全，您的手机号码将作为该帐号的安全手机。安全手机可用于找回密码、修改密保等操作。
+                            </p>
+                            <div>
+                                <div class="form-phone">
+                                    <div class="bview-input">
+                                        <span class="bview-input-icon-prepend">
+                                            <em>+86</em>
+                                        </span>
+                                        <input type="text" placeholder="请输入手机号" class="pnone-time" id="r-inpu">
+                                    </div>
+                                    <div class="item-tip"></div>
+                                </div>
+
+                                <div class="verification">
+                                    <div class="bview-input">
+                                        <input type="text" placeholder="请输入验证码" class="code-itme" id="s-input">
+                                        <div class="identifying-code">
+                                            <canvas width="150" height="46" id="captcha"></canvas>
+                                        </div>
+                                    </div>
+                                    <div class="item-tip"></div>
+                                </div>
+                                <button class="s-btn">完成注册</button>
+
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
+                <div class="win"></div>
             </div>
 
 

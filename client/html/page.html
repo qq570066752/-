@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/page.css">
+    <link rel="stylesheet" href="iconfont/iconfont.css">
+    <script src="js/jquery-3.4.1.js"></script>
+    <script src="js/md5.js"></script>
+</head>
+
+<body>
+    <div class="m-goodsDetails">
+        <div class="ag-head">
+            <div class="ag-content">
+                <h1>双光源记忆护目灯</h1>
+                <div class="v-head-nav">
+                    <button class="v-btn">加入购物车</button>
+                </div>
+            </div>
+        </div>
+        <div class="ag-body">
+            <div class="ag-body-content">
+
+                <div class="goodsPic">
+                    <img src="https://onegoods.nosdn.127.net/goods/2017/12/14/28adcb13b90325dc8f8509987a5de688.jpg">
+                </div>
+
+                <div class="goodsPic">
+                    <img src="https://onegoods.nosdn.127.net/goods/2017/12/14/28e6229af3f7d5f5a7a47e23c25973bf.jpg">
+                </div>
+
+                <div class="goodsPic">
+                    <img src="https://onegoods.nosdn.127.net/goods/2017/12/14/ffff974c17fb6e3bb433fba48cbdf97d.jpg">
+                </div>
+
+                <div class="goodsPic">
+                    <img src="https://onegoods.nosdn.127.net/goods/2017/12/14/15bc80180d26aa1d1271e4a5e998d55f.jpg">
+                </div>
+
+                <div class="goodsPic">
+                    <img src="https://onegoods.nosdn.127.net/goods/2017/12/14/4eee7b16839c06b4f08f9eaf8ec6917e.jpg">
+                </div>
+
+                <div class="goodsPic">
+                    <img src="https://onegoods.nosdn.127.net/goods/2017/12/14/2f6051774b761f4ed7f4659448fe399e.jpg">
+                </div>
+
+                <div class="goodsPic">
+                    <img src="https://onegoods.nosdn.127.net/goods/2017/12/14/4d179cf67d67ee11e231873816b8a51c.jpg">
+                </div>
+
+                <div class="goodsPic">
+                    <img src="https://onegoods.nosdn.127.net/goods/2017/12/14/f9df6a458948e1b1af0a4d7c1fa2f9df.jpg">
+                </div>
+
+                <div class="goodsPic">
+                    <img src="https://onegoods.nosdn.127.net/goods/2017/12/14/50d87ea0feaf2abaa42ccf9769855bae.jpg">
+                </div>
+
+                <div class="goodsPic">
+                    <img src="https://onegoods.nosdn.127.net/goods/2017/12/14/423a1db3eef654c8348978335a000f47.jpg">
+                </div>
+
+                <div class="goodsPic">
+                    <img src="https://onegoods.nosdn.127.net/goods/2017/12/14/4acff2d4a5afafb4240814ca257f5e66.jpg">
+                </div>
+
+                <div class="goodsPic">
+                    <img src="https://onegoods.nosdn.127.net/goods/2017/12/14/22561d5a4b4b8099d61737bb6cb77af9.jpg">
+                </div>
+
+                <div class="goodsPic">
+                    <img src="https://onegoods.nosdn.127.net/goods/2017/12/14/2b456a02fc3cafdbc246ba8e4fde61df.jpg">
+                </div>
+
+                <div class="goodsPic">
+                    <img src="https://onegoods.nosdn.127.net/goods/2017/12/14/fcced37e761befa844f8df44fd6a2a14.jpg">
+                </div>
+
+                <div class="goodsPic">
+                    <img src="https://onegoods.nosdn.127.net/goods/2017/12/14/6f72a827746812b2a42ca704161eb135.jpg">
+                </div>
+
+                <div class="goodsPic">
+                    <img src="https://onegoods.nosdn.127.net/goods/2017/12/14/6411be63291ced8eb97085e80a09393f.jpg">
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        $(function () {
+
+            var titleTop = $('.ag-head').offset().top;
+
+            $(document).on('scroll', function () {
+                if ($(document).scrollTop() > titleTop) {
+                    $('.ag-head').css({
+                        "position": "fixed",
+                        "top": 0
+                    })
+                } else {
+
+                    $('.ag-head').css({
+                        "position": "static"
+                        //"position":"absolute",
+                        //"top":"200px"
+                    })
+                }
+            })
+        })
+
+    </script>
+</body>
+
+</html>

@@ -15,20 +15,22 @@
 
 <body>
     <!-- 头部布局 -->
-    <!-- <div class="head-top"></div>
-    <script>
-        $(function () {
-            $(".head-top").load("./html/head.html")
-
-        
-        })
-    </script> -->
-
-
     <div class="navbar">
         <div class="m-header">
+
+            <div class="Mont">
+            </div>
+            <div id="osn" class="g-bd"
+                style="position: fixed; z-index: 10000; left: 50%; top: 50%; width: 559px; margin-left: -279.5px; height: 570px; margin-top: -285px; display: none;">
+            </div>
+            <script>
+                $(function () {
+                    $(".g-bd").load("./html/logging.html")
+                })
+            </script>
+
             <div class="container">
-                <a href="../../">
+                <a href="index.html">
                     <img class="u-logo" src="./images/logo.png" alt="">
                 </a>
                 <ul class="topbar-list">
@@ -92,8 +94,8 @@
                     <div class="icon-index">
                         <i class="iconfont icon-wode"></i>
                         <ul class="index-pop" style="display: none;">
-                            <li><a href="">登录</a></li>
-                            <li><a href="">注册</a></li>
+                            <li id="enter"><a>登录</a></li>
+                            <li id="enroll"><a>注册</a></li>
                         </ul>
                     </div>
                     <div class="smallcart">
@@ -127,6 +129,13 @@
         </ul>
 
     </div>
+    <div class="aget" style="display: none;">
+    </div>
+    <script>
+        $(function () {
+            $(".aget").load("./html/page.html")
+        })
+    </script>
     <!-- 底部布局 -->
     <div class="footerpage"></div>
     <script>
@@ -134,6 +143,8 @@
             $(".footerpage").load("./html/foot.html")
         })
     </script>
+
+
 
 </body>
 

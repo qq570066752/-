@@ -24,4 +24,5 @@ if($num == 1){
     // echo "恭喜你该邮箱可以注册";
     echo '{"status":"success","msg":"恭喜你该邮箱可以注册"}';
 }
+
 ?>

@@ -66,9 +66,18 @@ $(() => {
     }, function () {
         $(this).css("background", "#fff")
     })
-    // console.log($(".icon-index"))
 
     // 注册登录
+    $("#enroll").click(function () {
+        location.href = "html/login.html";
+        // console.log("++++")
+    })
 
+    // 登录
+    $("#enter").click(function () {
+        $(".Mont").css("display", "block");
+        $("#osn").css("display", "block");
+
+    })
 
 })

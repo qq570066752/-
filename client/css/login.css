@@ -90,10 +90,15 @@ body #app .stepguide .stepcurrent {
   font-weight: 700;
 }
 
+body #app #step0-btn {
+  display: block;
+}
+
 body #app .box {
   width: 444px;
   padding: 20px 0;
   margin: 20px auto 0;
+  display: none;
 }
 
 body #app .box .nop-form-item {
@@ -160,12 +165,13 @@ body #app .box .nop-form-item .nop-form-item-input .bview-input-wrapper .ieplace
   background: #fff;
 }
 
-body #app .box .nop-form-item .nop-form-item-input .nop-form-item-tip {
+body #app .box .nop-form-item .nop-form-item-input .error {
   display: none;
   min-height: 28px;
   margin-top: 2px;
   font-size: 14px;
   color: #ea3d3d;
+  display: block;
 }
 
 body #app .box .agree {
@@ -227,6 +233,259 @@ body #app .box .m-gologin {
 
 body #app .box .m-gologin .u-href {
   color: #2c82ff;
+}
+
+body #app .box1 {
+  width: 444px;
+  height: 316px;
+  padding: 20px 0;
+  margin: 20px auto 0;
+  display: none;
+}
+
+body #app .box1 .m-realname {
+  font-size: 14px;
+}
+
+body #app .box1 .m-realname .u-title {
+  font-weight: 700;
+  padding: 12px 0 30px 12px;
+  position: relative;
+  text-align: left;
+  font-size: 16px;
+  color: #141b3b;
+}
+
+body #app .box1 .m-realname .m-box {
+  width: 444px;
+  margin: 0 auto;
+  font-size: 14px;
+}
+
+body #app .box1 .m-realname .m-box .u-note {
+  margin-bottom: 10px;
+  text-align: left;
+  color: #141b3b;
+  background: #f8f8f8;
+}
+
+body #app .box1 .m-realname .m-box .form-item {
+  font-size: 14px;
+  width: 444px;
+  height: 76px;
+}
+
+body #app .box1 .m-realname .m-box .form-item .bview-input {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  height: 46px;
+}
+
+body #app .box1 .m-realname .m-box .form-item .bview-input .intp-box {
+  width: 100%;
+  height: 100%;
+  padding: 0 44px 0 10px;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 2px;
+  font-size: 14px;
+  background: #fff;
+  line-height: 32px;
+  vertical-align: middle;
+  outline: none;
+}
+
+body #app .box1 .m-realname .m-box .form-item .error {
+  display: none;
+  min-height: 28px;
+  margin-top: 2px;
+  font-size: 14px;
+  color: #ea3d3d;
+  display: block;
+}
+
+body #app .box1 .m-realname .m-box .m-btn {
+  display: inline-block;
+  vertical-align: middle;
+  height: 46px;
+  line-height: 46px;
+  border-color: #2c82ff;
+  background-color: #2c82ff;
+  width: 100%;
+  margin-top: 10px;
+  border-radius: 2px;
+  border-width: 0;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  position: relative;
+  font-weight: 700;
+  outline: none;
+  font-size: 17px;
+}
+
+body #app .box2 {
+  width: 444px;
+  height: 316px;
+  padding: 20px 0;
+  margin: 20px auto 0;
+  display: none;
+}
+
+body #app .box2 .m-realphone {
+  font-size: 14px;
+}
+
+body #app .box2 .m-realphone .u-title {
+  font-weight: 700;
+  padding: 12px 0 30px 12px;
+  position: relative;
+  text-align: left;
+  font-size: 16px;
+  color: #141b3b;
+}
+
+body #app .box2 .m-realphone .u-box {
+  width: 444px;
+  margin: 0 auto;
+  font-size: 14px;
+}
+
+body #app .box2 .m-realphone .u-box .note {
+  margin-bottom: 10px;
+  text-align: left;
+  color: #141b3b;
+  background: #f8f8f8;
+}
+
+body #app .box2 .m-realphone .u-box .form-phone {
+  font-size: 14px;
+  width: 444px;
+  height: 76px;
+}
+
+body #app .box2 .m-realphone .u-box .form-phone .bview-input {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  height: 46px;
+}
+
+body #app .box2 .m-realphone .u-box .form-phone .bview-input .pnone-time {
+  width: 100%;
+  height: 100%;
+  padding: 0 5px 0 50px;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 2px;
+  font-size: 14px;
+  background: #fff;
+  line-height: 32px;
+  vertical-align: middle;
+  outline: none;
+}
+
+body #app .box2 .m-realphone .u-box .form-phone .bview-input .bview-input-icon-prepend {
+  cursor: pointer;
+  position: absolute;
+  left: .28rem;
+  bottom: .2em;
+  width: 3.5em;
+  height: 2.5em;
+  z-index: 11;
+  font-size: 14px;
+  line-height: 2em;
+}
+
+body #app .box2 .m-realphone .u-box .form-phone .bview-input .bview-input-icon-prepend em {
+  left: .3em;
+  height: 2em;
+  width: 3em;
+  text-align: center;
+  margin: .4em 0 0;
+  margin-left: 0.8em;
+  color: #666;
+}
+
+body #app .box2 .m-realphone .u-box .form-phone .error {
+  display: none;
+  min-height: 28px;
+  margin-top: 2px;
+  font-size: 14px;
+  color: #ea3d3d;
+  display: block;
+}
+
+body #app .box2 .m-realphone .u-box .verification {
+  font-size: 14px;
+  width: 444px;
+  height: 76px;
+}
+
+body #app .box2 .m-realphone .u-box .verification .bview-input {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  height: 46px;
+}
+
+body #app .box2 .m-realphone .u-box .verification .bview-input .code-itme {
+  width: 45%;
+  height: 100%;
+  padding: 0 5px 0 10px;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 2px;
+  font-size: 14px;
+  background: #fff;
+  line-height: 32px;
+  vertical-align: middle;
+  outline: none;
+}
+
+body #app .box2 .m-realphone .u-box .verification .bview-input .identifying-code {
+  cursor: pointer;
+  position: absolute;
+  bottom: 0px;
+  width: 150px;
+  height: 100%;
+  right: 20px;
+  font-size: 14px;
+  line-height: 2em;
+}
+
+body #app .box2 .m-realphone .u-box .verification .error {
+  min-height: 28px;
+  margin-top: 2px;
+  font-size: 14px;
+  color: #ea3d3d;
+  display: block;
+}
+
+body #app .box2 .m-realphone .u-box .s-btn {
+  display: inline-block;
+  vertical-align: middle;
+  height: 46px;
+  line-height: 46px;
+  border-color: #2c82ff;
+  background-color: #2c82ff;
+  width: 100%;
+  margin-top: 10px;
+  border-radius: 2px;
+  border-width: 0;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  position: relative;
+  font-weight: 700;
+  outline: none;
+  font-size: 17px;
 }
 
 body .g-ft {
